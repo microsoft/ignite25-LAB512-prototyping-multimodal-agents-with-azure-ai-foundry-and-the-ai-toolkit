@@ -1,0 +1,70 @@
+name: Add Issues to Ignite Project
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-to-project:
+    name: Add Issue to Ignite GitHub Project
+    runs-on: ubuntu-latest
+    if: github.event.action == 'opened'
+    
+    steps:
+      - name: Add issue to project
+        uses: actions/add-to-project@v0.5.0
+        with:
+          project-url: ${{ vars.IGNITE_PROJECT_URL }}
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+
+  label_issues:
+    name: Apply Labels to New Issues
+    runs-on: ubuntu-latest
+    if: github.event.action == 'opened'
+    
+    steps:
+      - name: Apply default labels
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const labels = ['ignite25', 'needs-triage'];
+            
+            // Add default labels
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              labels: labels
+            });
+            
+            // Add additional labels based on issue content
+            const title = issue.title.toLowerCase();
+            const body = issue.body ? issue.body.toLowerCase() : '';
+            
+            const additionalLabels = [];
+            
+            if (title.includes('bug') || body.includes('bug')) {
+              additionalLabels.push('bug');
+            }
+            
+            if (title.includes('enhancement') || title.includes('feature') || body.includes('enhancement') || body.includes('feature')) {
+              additionalLabels.push('enhancement');
+            }
+            
+            if (title.includes('documentation') || title.includes('docs') || body.includes('documentation')) {
+              additionalLabels.push('documentation');
+            }
+            
+            if (title.includes('lab') || body.includes('lab')) {
+              additionalLabels.push('lab');
+            }
+            
+            if (additionalLabels.length > 0) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: additionalLabels
+              });
+            }
