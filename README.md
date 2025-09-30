@@ -70,28 +70,28 @@ Send them to [Mike Kinsman](mailto:mikki@microsoft.com) and [Laurent Bugnion](lb
 
 # [Microsoft Ignite 2025](https://ignite.microsoft.com)
 
-## 🔥BRKXXX: Interacting with Multimodal models and Agents in Azure AI Foundry
+## 🔥LAB512: Prototyping multimodal agents with Azure AI Foundry and the AI Toolkit 
 
 [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 [![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=adff2f&logoColor=fff)](https://aka.ms/foundry/forum)
 
 ### Session Description
 
-*Add Session Description*
+In this lab, you'll get hands-on with the AI Toolkit (AITK) and Azure AI Foundry in VS Code to explore and compare the latest multimodal and reasoning models from the Model Catalog. Learn how to augment models for a real-world business scenario, using prompt and context engineering. Prototype an agent using the AITK Agent Builder, and equip the agent with the right tools via MCP.
 
 ### 🧠 Learning Outcomes
 
 By the end of this session, learners will be able to:
 
--  
--
--
+-  Explore and compare models to select the best fit for their business scenario
+-  Augment models with prompts and data to get more accurate and grounded responses 
+-  Prototype an agent by combining models and instructions with tools via MCP (Model Context Protocol)
 
 ### 💻 Technologies Used
 
-1.
-1.
-1.
+1. AI toolkit in Visual Studio Code
+1. GitHub-hosted and Azure AI Foundry-hosted models
+1. MCP servers
 
 ### 🌟 Microsoft Learn MCP Server
 
@@ -120,19 +120,19 @@ For more information, setup instructions for other dev clients, and to post comm
 
 <table>
 <tr>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE"
+    <td align="center"><a href="http://github.com/carlotta94c">
+        <img src="https://github.com/carlotta94c.png" width="100px;" alt="Carlotta Castelluccio"
 "/><br />
-        <sub><b> INSERT NAME HERE
+        <sub><b> Carlotta Castelluccio
 </b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
+            <a href="https://github.com/carlotta94c" title="talk">📢</a> 
     </td>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE
+    <td align="center"><a href="http://github.com/carlotta94c">
+        <img src="https://github.com/aprilgittens.png" width="100px;" alt="April Gittens
 "/><br />
-        <sub><b>INSERT NAME HERE
+        <sub><b>April Gittens
 </b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
+            <a href="https://github.com/aprilgittens" title="talk">📢</a> 
     </td>
 </tr></table>
 
