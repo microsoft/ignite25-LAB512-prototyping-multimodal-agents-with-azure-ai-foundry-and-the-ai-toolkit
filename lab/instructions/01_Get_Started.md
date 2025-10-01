@@ -49,8 +49,8 @@ In this workshop, we will be using **GitHub Codespaces** to launch a cloud-hoste
 ## Login to Azure 
 
 In the GitHub Codespace, you should be able to see two Visual Studio Code extensions already installed: 
-    - The **AI Toolkit**: this is the extension we will be using to interact with various AI models and services in this lab.
-    - The **Azure AI Foundry** extension: it's installed as a bundle of the AI Toolkit and provides access to Azure AI Foundry hosted models. 
+- The **AI Toolkit**: this is the extension we will be using to interact with various AI models and services in this lab.
+- The **Azure AI Foundry** extension: it's installed as a bundle of the AI Toolkit and provides access to Azure AI Foundry hosted models. 
 If they are correctly installed, you should see their icons in the left sidebar of VS Code, as per screenshot below.
 
 ![Installed extensions](../../img/installed_extensions.png)
@@ -67,8 +67,8 @@ You'll be prompted with a popup to confirm with the Azure login. Click **Allow**
 ![Azure Login Popup](../../img/azure_login_popup.png)
 
 Next, you'll be redirected to a browser window to complete the login process. Enter the following credentials:
-    -  Email: +++@lab.CloudPortalCredential(User1).Username+++
-    -  Password: +++@lab.CloudPortalCredential(User1).Password+++
+-  Email: +++@lab.CloudPortalCredential(User1).Username+++
+-  Password: +++@lab.CloudPortalCredential(User1).Password+++
 
 Back in your Codespace, you'll be asked to select the Azure AI Foundry project to use. Select the only available option, which is the project pre-deployed for this workshop.
 

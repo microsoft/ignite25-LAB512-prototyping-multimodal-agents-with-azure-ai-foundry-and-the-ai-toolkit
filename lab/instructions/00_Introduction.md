@@ -24,4 +24,6 @@ The lab is organized into 4 sections, taking you through the process of prototyp
 3. **Part 3 - Agent Prototyping** In this section, you will use the AITK Agent Builder to prototype an agent. You will combine your selected and augmented models with instructions and tools via MCP (Model Context Protocol).
 4. **Part 4 - From Prototype to Code** Finally, you will learn how to export your agent prototype into code that can be integrated into your applications.
 
+## Business Scenario
+
 Click **Next** to set up your Workshop environment and get started.
