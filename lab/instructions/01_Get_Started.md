@@ -56,9 +56,25 @@ If they are correctly installed, you should see their icons in the left sidebar 
 ![Installed extensions](../../img/installed_extensions.png)
 
 >![TIP]
-> If you don't see the icons, click on the ellipsis (...) at the bottom of the sidebar to se the full list of installed extensions. 
+> If you don't see the icons, click on the ellipsis (...) at the bottom of the sidebar to see the full list of installed extensions. 
+
+Now click on the Azure AI Foundry extension icon, and then click on **Set Default Project**.
+
+![Set Default Project](../../img/set_default_project.png)
+
+You'll be prompted with a popup to confirm with the Azure login. Click **Allow**.
+
+![Azure Login Popup](../../img/azure_login_popup.png)
+
+Next, you'll be redirected to a browser window to complete the login process. Enter the following credentials:
+    -  Email: +++@lab.CloudPortalCredential(User1).Username+++
+    -  Password: +++@lab.CloudPortalCredential(User1).Password+++
+
+Back in your Codespace, you'll be asked to select the Azure AI Foundry project to use. Select the only available option, which is the project pre-deployed for this workshop.
+
+![Select Project](../../img/select_project.png)
 
 ## Ready to start
 
-That covers the necessary setup and basics of Azure AI Foundry portal. We will now move forward to begin interacting with the models. 
-Click **Next** to proceed to the Text Generation section.
+That covers the necessary setup to work with the AI Toolkit in VScode and Azure AI Foundry hosted models. We will now move forward to begin exploring the Model Catalog and interacting with the models.
+Click **Next** to proceed to the following section of the lab.
