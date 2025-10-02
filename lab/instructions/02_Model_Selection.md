@@ -73,11 +73,13 @@ After applying filters, you'll see a refined list of models. For this exercise:
 
 Let's start interacting with the models with a simple prompt:
 
-1. Enter this prompt in the text field:
+1. Enter this prompt in the text field (where you see the placeholder "Type a prompt"):
    ```
    What materials are commonly used for building a wooden deck?
-   ```
-2. Click **Run** to execute the prompt on both models simultaneously
+   ````
+2. Click the paper airplane icon to execute the prompt on both models simultaneously
+
+![Test the model](../../img/test_the_model.png)
 
 Now let's test their reasoning capabilities, with the following prompt:
 ```
@@ -103,7 +105,7 @@ Next, test the models' image processing capabilities:
    ```
 ![Image File Path](../../img/image_file_path.png)
 
-4. Click **Run** to execute the multimodal prompt on both models simultaneously.
+4. Send the multimodal prompt on both models simultaneously.
 
 
 ## Step 5: Analyze and Compare Results
@@ -118,6 +120,7 @@ Review the outputs from both models, using several factors to guide your evaluat
 
 > [!TIP]
 > Number of output tokens is visible in the response footer, along with characters length.
+
 ![Token usage](../../img/token_usage.png)
 
 ## Step 6: Select a Model for Next Steps
