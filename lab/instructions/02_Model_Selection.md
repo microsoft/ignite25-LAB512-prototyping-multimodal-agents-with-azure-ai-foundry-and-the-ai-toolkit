@@ -20,7 +20,7 @@ Since the list is quite consistent, you can use the filtering options to narrow 
 2. Select **GitHub** to view free-to-use models that are excellent for prototyping.
 
 > [!NOTE]
-> GitHub models are perfect for getting started because they're free to use, but they are token-rate limited. You can experiment without cost concerns, but for production deployments, consider using a pay-as-you-go offering through your GitHub Account or Azure AI Foundry.
+> GitHub models are perfect for getting started because they're free to use, but they are token-rate limited. You can experiment without cost concerns, but for production deployments consider using a pay-as-you-go offering through your GitHub Account or Azure AI Foundry.
 
 ### Filter by Model Features
 
@@ -66,45 +66,75 @@ After applying filters, you'll see a refined list of models. For this exercise:
 
 ![Model Comparison](../../img/model_comparison.png)
 
-## Step 4: Test Multimodal Capabilities
+## Step 4: Test Text Generation and Multimodal Capabilities
 
-To test the models' image processing capabilities:
+> [!TIP]
+> The side-by-side comparison allows you to see exactly how different models handle the same input, making it easier to choose the best fit for your specific use case.
+
+Let's start interacting with the models with a simple prompt:
+
+1. Enter this prompt in the text field:
+   ```
+   What materials are commonly used for building a wooden deck?
+   ```
+2. Click **Run** to execute the prompt on both models simultaneously
+
+Now let's test their reasoning capabilities, with the following prompt:
+```
+I am planning to install outdoor deck lighting for my new 12x16 foot deck. I want to place lights every 4 feet along the perimeter for even illumination. However, I discover that one corner of my deck will be shaded by a large tree, making that area naturally darker.
+
+Given these constraints, how should I adjust my lighting layout to ensure uniform brightness across the entire deck? Consider the principles of light distribution and explain your reasoning step by step.
+```
+
+Next, test the models' image processing capabilities:
 
 1. Enter this prompt in the text field:
    ```
    Describe what's in the image, including colors of the objects.
    ```
 
-2. Click the attachment icon to add an image
-3. Select an image file to upload (you can use any relevant image for testing)
-4. Click **Run** to execute the prompt on both models simultaneously
+2. Click the image attachment icon to add a picture as input
+
+![Image Attachment](../../img/image_attachment.png)
+
+3. Select an image file to upload. You'll be prompted with a text field with a default file path in your workspace directory. Replace it with the following:
+   ```
+   /workspace/img/demo_living_room.png
+   ```
+![Image File Path](../../img/image_file_path.png)
+
+4. Click **Run** to execute the multimodal prompt on both models simultaneously.
+
 
 ## Step 5: Analyze and Compare Results
 
-Review the outputs from both models:
+Review the outputs from both models, using several factors to guide your evaluation:
 
-- **Response Quality**: Compare the depth and accuracy of descriptions
+- **Response Quality**: Compare the depth and accuracy of descriptions, as well as the coherence with the input prompt.
 - **Detail Level**: Which model provides more comprehensive analysis?
-- **Processing Time**: Note any differences in response speed
-- **Cost Considerations**: Factor in the pricing differences for production use
+- **Processing Time**: Note any differences in response speed.
+- **Output Formatting**: Evaluate clarity and organization of responses, as well as verbosity.
+- **Token Usage**: Inspect the token usage for each model to understand cost implications. Note that token usage may vary not only based on the verbosity of the response but also on the tokenizer efficiency of each model.
 
 > [!TIP]
-> The side-by-side comparison allows you to see exactly how different models handle the same input, making it easier to choose the best fit for your specific use case.
+> Number of output tokens is visible in the response footer, along with characters length.
+![Token usage](../../img/token_usage.png)
 
-## Step 6: Consider Production Deployment Options
+## Step 6: Select a Model for Next Steps
 
-After selecting your preferred model based on testing:
+Once we are done with the comparison, we are going to select one of the two models for further prototyping in the next lab sections. For the sake of this exercise, let's go with **GPT-5-mini**. 
+Click on **Select this model** on the right side of the model name.
 
-1. Return to the **Model Catalog**
-2. Look for the same model offered through **Azure AI Foundry** hosting
-3. Consider the benefits of Azure AI Foundry hosting for production:
-   - Enterprise-grade security and compliance
-   - Service Level Agreements (SLAs)
-   - Enhanced performance and scalability
-   - Integration with other Azure services
+![Select this model](../../img/select_this_model.png)
+
+Now, since in the next section we are going to augment the model with additional context data relative to Zava, our DIY retail company, we need to switch to a model hosted in Azure AI Foundry, which provides enterprise-grade security and compliance features.
+
+Expand the **Model** dropdown and select the gpt-5-mini instance hosted in Azure AI Foundry, that has been pre-deployed for this workshop, in the project you logged into in the [previous lab section](./01_Get_Started.md).
+
+![Select Azure Model](../../img/select_azure_model.png)
 
 > [!NOTE]
-> While GitHub models are excellent for prototyping, Azure AI Foundry hosted models provide the enterprise features needed for production deployments.
+> While GitHub models are excellent for prototyping, Azure AI Foundry hosted models provide the enterprise features needed for production deployments, including enterprise-grade security and compliance, Service Level Agreements (SLAs), enhanced performance and scalability, and integration with other Azure services.
 
 ## Key Takeaways
 
@@ -115,3 +145,4 @@ After selecting your preferred model based on testing:
 - Multimodal capabilities can be tested effectively using the built-in comparison tools
 
 This exploration process ensures you select the most appropriate model for your specific use case, balancing factors like performance, cost, features, and deployment requirements.
+Click **Next** to proceed to the following section of the lab.

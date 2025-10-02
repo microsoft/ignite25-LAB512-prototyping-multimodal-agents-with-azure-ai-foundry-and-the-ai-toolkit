@@ -26,4 +26,42 @@ The lab is organized into 4 sections, taking you through the process of prototyp
 
 ## Business Scenario
 
+In this workshop, you'll be building an AI agent for **Zava**, a leading DIY (Do-It-Yourself) retail company that operates both online e-commerce and multiple physical stores across the United States. Zava specializes in home improvement, hardware, tools, and DIY project supplies, serving customers who range from weekend hobbyists to professional contractors.
+
+### The Challenge
+
+Zava's customers often struggle to find the right products for their DIY projects from the company's extensive catalog of thousands of items. Customers frequently have questions like:
+- "What materials do I need for building X?"
+- "What's the difference between these two similar tools?"
+
+Additionally, customers want to know:
+- **Product availability** in their local stores
+- **Online inventory status** for delivery options
+- **Detailed product specifications** and compatibility
+- **Alternative products** when their first choice isn't available
+
+### The Solution: Cora, Zava's AI Agent
+
+You'll be developing **Cora**, an intelligent customer service agent that can:
+
+1. **Understand multimodal inputs**: Process both text descriptions and images from customers (e.g., photos of their project space or damaged items they need to replace)
+
+2. **Search the product catalog**: Find relevant products from Zava's extensive inventory based on natural language queries and visual inputs
+
+3. **Provide detailed product information**: Share specifications, usage recommendations, and compatibility details
+
+4. **Check availability**: Access real-time inventory data to inform customers about product availability both online and in physical store locations
+
+5. **Offer intelligent recommendations**: Suggest complementary products, alternatives, and complete project solutions
+
+### Why This Matters
+
+This agent will help Zava:
+- **Improve customer experience** by providing instant, accurate product assistance
+- **Increase sales** through better product discovery and recommendations
+- **Reduce support costs** by automating common customer inquiries
+- **Support omnichannel strategy** by seamlessly connecting online and in-store experiences
+
+Throughout this workshop, you'll use the AI Toolkit and Azure AI Foundry to build, test, and refine Cora's capabilities, learning how to create AI agents for real business scenarios.
+
 Click **Next** to set up your Workshop environment and get started.

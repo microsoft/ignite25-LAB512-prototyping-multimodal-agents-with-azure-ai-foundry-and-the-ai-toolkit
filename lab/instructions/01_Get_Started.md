@@ -21,7 +21,7 @@ In this workshop, we will be using **GitHub Codespaces** to launch a cloud-hoste
 
 2. To launch a codespace, you need a **GitHub account**. 
 
-    > ![NOTE]
+    > [!NOTE]
     > If you already have a personal GitHub account (not associated with an organization), you can move to step 3 directly.
 
     To create one, click on the **Sign up** button and follow the instructions below:
@@ -55,7 +55,7 @@ If they are correctly installed, you should see their icons in the left sidebar 
 
 ![Installed extensions](../../img/installed_extensions.png)
 
->![TIP]
+>[!TIP]
 > If you don't see the icons, click on the ellipsis (...) at the bottom of the sidebar to see the full list of installed extensions. 
 
 Now click on the Azure AI Foundry extension icon, and then click on **Set Default Project**.
@@ -68,7 +68,7 @@ You'll be prompted with a popup to confirm with the Azure login. Click **Allow**
 
 Next, you'll be redirected to a browser window to complete the login process. Enter the following credentials:
 -  Email: +++@lab.CloudPortalCredential(User1).Username+++
--  Password: +++@lab.CloudPortalCredential(User1).Password+++
+-  TAP: +++@lab.CloudPortalCredential(User1).TAP+++
 
 Back in your Codespace, you'll be asked to select the Azure AI Foundry project to use. Select the only available option, which is the project pre-deployed for this workshop.
 
