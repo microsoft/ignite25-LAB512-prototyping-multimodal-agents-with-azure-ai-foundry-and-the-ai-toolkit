@@ -19,15 +19,15 @@
 
 
 # Project information .........................................
-site_name: "Session Title"
+site_name: "Prototyping multimodal agents with Azure AI Foundry and the AI Toolkit"
 site_url: 
-site_author: Content Creator
+site_author: Carlotta Castelluccio
 site_description: >-
   Demo mkdocs for Ignite Repos
 
 # Repository ..................................................
-repo_name: microsoft/Ignite25-Repo-Template
-repo_url: https://github.com/microsoft/Ignite25-Repo-Template
+repo_name: microsoft/Ignite25-Repo-LAB512
+repo_url: https://github.com/microsoft/ignite25-LAB512-interacting-with-multimodal-models-and-agents-in-azure-ai-foundry
 
 # Copyright ...................................................
 copyright: >
