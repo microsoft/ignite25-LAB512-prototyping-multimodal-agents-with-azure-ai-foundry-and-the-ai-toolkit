@@ -10,39 +10,61 @@ Earlier in the **Model Augmentation** exercise, we added grounding data to the m
 
 To start the **Basic Customer Sales** server, within your Visual Studio Code workspace, navigate to `.vscode/mcp.json`. Within the `mcp.json` file, locate the `zava-customer-sales-stdio` server and click **Start** above the server.
 
-[image]
+![Start Zava MCP Server](../../img/start-zava-mcp-server.png)
 
 ## Step 2: Add a Tool to the Agent
 
 The **Basic Customer Sales** server consists of two tools:
 - get_products_by_name
-- 
+- get_current_utc_date
 
 For this lab, we'll only use the **get_products_by_name** tool. Ideally, you'll only want to give your agent access to tools that are relevant for it's purpose.
 
-Back in Agent Builder, select the **+** icon next to **Tools** to open the wizard for adding tools to the agent. When prompted, select the running **Basic Customer Sales** server followed by the **get_products_by_name** tool.
+Back in Agent Builder, select the **+** icon next to **Tools** to open the wizard for adding tools to the agent. 
 
-[image]
+![Add tool.](../../img/add-tool.png)
+
+When prompted, select **Use Tools Added in Visual Studio Code**. In  the list of tools available, only select the **mcp_zava_customer_get_products_by_name** tool and click **OK**. You can unselect all tools by unchecking the box at the top of the wizard next to the search bar.
+
+![Deselect all tools.](../../img/deselect-all-tools.png)
 
 ## Step 3: Chat with the Agent
 
-You're now ready to test whether the Cora agent executes a tool call when given a prompt that warrants leveraging a tool! On the **Playground** tab, attach the `name-of-image.jpg` and submit the following prompt:
+You're now ready to test whether the Cora agent executes a tool call when given a prompt that warrants leveraging a tool! On the **Playground** tab, click the **Clear all messages** icon to start a new conversation.
+
+![Clear all messages.](../../img/clear-all-messages.png)
+
+With the chat window cleared, attach the `demo-living-room.png` and submit the following prompt:
 
 ```
 Here’s a photo of my living room. Based on the lighting and layout, recommend either a Zava eggshell or Zava semi-gloss paint.
 ```
 
-If the agent wants to call a tool, a notification will appear in Visual Studio Code requesting [what it'll request]. Select [whatever it says] to execute the tool call.
+If the agent wants to call a tool, a notification will appear in Visual Studio Code requesting to **Run get_products_by_name**. Select **Yes** to execute the tool call.
 
-[image]
+![Yes run tool.](../../img/yes-run-tool.png)
 
-Assuming the agent executes a tool call, a section appears for [whatever it's called]. This section indicates which tool was used to aid in generating the agent's output.
+Assuming the agent executes a tool call, a section appears in the agent output indicating which tool was invoked.
 
-[image]
+![Tool call in the agent's output.](../../img/tool-call.png)
 
 Did Cora recommend Zava's eggshell paint? Hopefully so! Due to the non-deterministic nature of language models, the agent's output will differ each time the aforementioned prompt is submitted. Provided below is example of the agent's response:
 
-[insert agent response]
+> For your lovely interior, I recommend our Interior Eggshell Paint from Zava's Paint & Finishes collection.  
+>  
+> **Why It's a Good Fit:**  
+>  
+> - **Finish:** Eggshell finish provides a smooth, subtle sheen that's more durable and washable than matte paints, making it ideal for living spaces with moderate traffic.  
+> - **Versatility:** Works well on various surfaces, including walls and woodwork, complementing both modern and traditional interiors.  
+> - **Aesthetic:** Its light-reflecting quality adds brightness, perfect for enhancing natural light in your room.  
+>  
+> **Product Details:**  
+>  
+> - **Category**: Paint & Finishes  
+> - **Price**: $65.67  
+> - **Stock**: Available  
+>  
+> This paint will help to bring a soft, sophisticated look to your space while being easy to care for. If you have any other questions or need more details, feel free to ask!
 
 If the Cora agent did not recommend an eggshell paint, there's various techniques that we could leverage to modify the agent's behavior to encourage the use of the **get_products_by_name** tool. One should way would be to modify the **Instructions** to explicitly reference the required tools to use in which the model has access. Alternatively, you could modify the prompt itself to the following:
 
@@ -54,7 +76,6 @@ If you'd like to continue testing tool calls with the Cora agent, try submitting
 
 - How much is Zava's eggshell paint?
 - What are the current inventory levels for Zava's eggshell paint?
-- TBD
 
 ## Key Takeaways
 

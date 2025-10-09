@@ -9,7 +9,7 @@ To use the Evaluation features of Agent Builder, the agent's **Instructions** mu
 Since the Cora agent's general purpose is to recommend Zava products, it makes most sense to use the term **product** as a variable. What we can do is modify the **Instructions** to the following:
 
 ```
-You are Cora, an intelligent and friendly AI assistant for Zava, a home improvement brand. You help customers with their DIY projects by understanding their needs and recommending the most suitable {{products}} from Zava’s catalog.​
+You are Cora, an intelligent and friendly AI assistant for Zava, a home improvement brand. You help customers with their DIY projects by understanding their needs and recommending the most suitable {{product}} from Zava’s catalog.​
 
 Your role is to:​
 
@@ -39,9 +39,9 @@ If no matching products are found in Zava’s catalog, say:​
 “Thanks for sharing those details! I’ve searched our catalog, but it looks like we don’t currently have a product that fits your exact needs. If you'd like, I can suggest some alternatives or help you adjust your project requirements to see if something similar might work.”​
 ```
 
-All variables are stored in the **Variables** section Agent Builder.
+All variables are stored in the **Variables** section in Agent Builder.
 
-[image]
+![Agent variables.](../../img/agent-variables.png)
 
 So how does this work? Suppose we want to use `eggshell paint` as the `{{product}}`. Assuming you've defined `eggshell paint` as the value for `{{product}}`, when the user prompt is run, the **Instructions** are dynamically modified to reflect the value `eggshell paint` for the `{{product}}` variable. Therefore, the agent instructions would read:
 
@@ -55,7 +55,11 @@ Let's see this in action by running a few lines of evaluation data!
 
 In Agent Builder, switch to the **Evaluation** tab. Executing an evaluation requires a value for both the **User Query** and **{{variable}}**. The **User Query** is the prompt that the user submits to the agent (ex: Does Zava sell paint?). The **{{variable}}** is the value for your variable (ex: `{{product}}`).
 
-[image]
+> [!NOTE]
+> The {{product}} variable will only show in the table header after clicking **+ Add an Empty Row**.
+>
+
+![Evaluation table.](../../img/evaluation-table.png)
 
 You have a couple of options from here with respect to how you'd like to add data for your evaluation.
 
@@ -76,9 +80,9 @@ How many {{product}} is currently in stock?   | tape measure
 
 **Generate Data**
 
-If you need help with creating data, the **Generate Data** feature can generate up to 10 rows of synthetic data. Synthetic data is artificially created data that mimics real-world information, but isn’t collected from actual people or events. The feature itself leverages a LLM that takes a **Generation Logic** as input to create **User Query** and **{{product}}** pairs. The **Generate Data** feature generates it's own set of instructions (or Generation Logic) based on the agent's **Instructions**. However, you can modify the **Generation Logic** to your liking.
+If you need help with creating data, the **Generate Data** feature can generate up to 10 rows of synthetic data. Synthetic data is artificially created data that mimics real-world information, but isn’t collected from actual people or events. The feature itself leverages a LLM that takes **Generation Logic** as input to create **User Query** and **{{product}}** pairs. The **Generate Data** feature generates it's own set of instructions (or Generation Logic) based on the agent's **Instructions**. However, you can modify the **Generation Logic** to your liking.
 
-[image]
+![Generate data.](../../img/generate-data.png)
 
 After entering your **Rows of Data to Generate**, modify the **Generation Logic** and select **Generate** to generate a dataset. The generated dataset appears in the evaluation table.
 
@@ -95,9 +99,9 @@ How many {{product}} is currently in stock?   | tape measure
 
 Whereas both **User Query** and **{{product}}** are headers. The **Import** icon (i.e. up arrow with a line) enables you to select the dataset file to import into the Agent Builder.
 
-[image]
+![Import dataset.](../../img/import-dataset.png)
 
-Consider experimenting with each option! The remaining instructions for this lab will continue to following the first option: **Manually Add Data**
+Consider experimenting with each option! The remaining instructions for this lab will continue to follow the first option: **Manually Add Data**
 
 ## Step 3: Assess Your Agent Output
 
