@@ -123,16 +123,17 @@ Review the outputs from both models, using several factors to guide your evaluat
 
 ![Token usage](../../img/token_usage.png)
 
-## Step 6: Select a Model for Next Steps
+## Step 6: Import selected model from Azure AI Foundry
 
 Once we are done with the comparison, we are going to select one of the two models for further prototyping in the next lab sections. For the sake of this exercise, let's go with **GPT-5-mini**. 
-Click on **Select this model** on the right side of the model name.
 
-![Select this model](../../img/select_this_model.png)
+> [!TIP]
+> To come back to the standard Playground (with a single pane and a single model),you can click on **Select this model** on the right side of the model name.
+> ![Select this model](../../img/select_this_model.png)
 
 Now, since in the next section we are going to augment the model with additional context data relative to Zava, our DIY retail company, we need to switch to a model hosted in Azure AI Foundry, which provides enterprise-grade security and compliance features.
 
-Expand the **Model** dropdown and select the gpt-5-mini instance hosted in Azure AI Foundry, that has been pre-deployed for this workshop, in the project you logged into in the [previous lab section](./01_Get_Started.md).
+go back to **Model Playground** and expand the **Model** dropdown and select the gpt-5-mini instance hosted in Azure AI Foundry, that has been pre-deployed for this workshop, in the project you logged into in the [previous lab section](./01_Get_Started.md).
 
 ![Select Azure Model](../../img/select_azure_model.png)
 

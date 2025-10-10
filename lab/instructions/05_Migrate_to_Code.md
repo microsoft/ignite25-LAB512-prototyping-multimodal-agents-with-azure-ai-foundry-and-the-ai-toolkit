@@ -10,7 +10,7 @@ In Agent Builder, scroll down towards the bottom of the left side of the screen 
 
 ![View code button.](../../img/view-code.png)
 
-When prompted, select your preferred client SDK and programming language. Once the new file is created, save the file to your workspace.
+When prompted, select your preferred client SDK (e.g. *Microsoft Agent Framework*) and programming language (e.g. *Python*). Once the new file is created, save the file to your workspace.
 
 ## Step 2: View the Code
 
