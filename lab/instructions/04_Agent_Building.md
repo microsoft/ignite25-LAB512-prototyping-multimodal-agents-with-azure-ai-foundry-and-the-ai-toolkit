@@ -85,8 +85,8 @@ Provided below is an example of the agent's response:
 
 ## Key Takeaways
 
-- TBD
-- TBD
-- TBD
+- Agent Builder in the AI Toolkit offers a comprehensive two-panel interface that separates agent configuration from testing and evaluation.
+- Crafting specific instructions shapes the agent's personality, conversational style, and response patterns for consistent interactions.
+- Testing agents with both text and images demonstrates how modern AI can process visual context for more informed recommendations.
 
 Click **Next** to proceed to the following section of the lab.

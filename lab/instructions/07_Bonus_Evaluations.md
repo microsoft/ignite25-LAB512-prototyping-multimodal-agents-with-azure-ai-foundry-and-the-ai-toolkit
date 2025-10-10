@@ -107,11 +107,11 @@ Consider experimenting with each option! The remaining instructions for this lab
 
 With your dataset prepared, you can run rows one by one or select multiple rows to run together. To select a row, check the box to the left of the row. To run the row, select the **Run Response** icon (i.e. play button).
 
-[image]
+![Run button.](../../img/run-eval.png)
 
 The model will generate a response for each **User Query** and **{{product}}** pair. Once the response is generated, review the output and select either the **thumbs up** or **thumbs down** icon in the **Manual** column.
 
-[image]
+![Manual evaluation.](../../img/manual-evaluation.png)
 
 How do you decide whether the response deserves a **thumbs up** or **thumbs down**? That's completely up to you! When deciding whether to give a thumbs up or thumbs down, think about whether the output met your expectations. A **thumbs up** means the response was accurate, relevant, clear, and genuinely helpful—it gave you the information or result you were looking for. A **thumbs down** means the response fell short in some way, such as being incorrect, incomplete, confusing, off-topic, or not useful for your task.
 
@@ -119,6 +119,6 @@ In short, ask yourself: **Did the output do what I needed it to? If yes, choose 
 
 ## Key Takeaways
 
-- TBD
-- TBD
-- TBD
+- Adding variables like {{product}} to agent instructions allows for systematic testing across different contexts while maintaining the agent's core purpose and functionality.
+- Agent Builder supports manual data entry, synthetic data generation, and CSV imports, providing flexibility for creating evaluation datasets that match specific testing needs.
+- Human judgment through thumbs up/down ratings helps assess whether agent responses meet expectations for accuracy, relevance, and usefulness beyond automated metrics.

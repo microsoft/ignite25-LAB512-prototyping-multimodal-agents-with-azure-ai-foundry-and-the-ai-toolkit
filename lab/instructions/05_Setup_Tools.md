@@ -79,8 +79,8 @@ If you'd like to continue testing tool calls with the Cora agent, try submitting
 
 ## Key Takeaways
 
-- TBD
-- TBD
-- TBD
+- Model Context Protocol (MCP) servers offer a standardized framework for connecting AI agents to external tools and data sources more effectively than static file attachments.
+- Adding only relevant tools (like the get_products_by_name function) to an agent ensures it stays focused on its intended purpose rather than having access to unnecessary capabilities.
+- Integrating MCP tools allows agents to retrieve current inventory levels, pricing, and product information dynamically rather than relying on outdated static data.
 
 Click **Next** to proceed to the following section of the lab.
