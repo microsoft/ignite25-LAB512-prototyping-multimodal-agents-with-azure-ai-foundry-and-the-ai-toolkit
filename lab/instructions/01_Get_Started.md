@@ -19,6 +19,9 @@ In this workshop, we will be using **GitHub Codespaces** to launch a cloud-hoste
 
 1. Open the edge browser from the taskbar. You'll get a browser tab with the [GitHub repo](https://aka.ms/msignite25-lab512) hosting the lab code and resources already opened for you. 
 
+    > [!TIP]
+    > Click the Star button in the top right corner, this will help you easily find it later.
+
 2. To launch a codespace, you need a **GitHub account**. 
 
     > [!NOTE]
